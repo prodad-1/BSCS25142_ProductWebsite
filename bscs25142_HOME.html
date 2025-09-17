@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSCS25142 - Home</title>
+    <link rel="stylesheet" href="bscs25142_css.css">
+<script src="bscs25142_script.js"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="bscs25142_HOME.html">KAWASAKI</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="bscs25142_HOME.html">HOME</a></li>
+                <li><a href="bscs25142_PRODUCTS.html">PRODUCTS</a></li>
+                <li><a href="bscs25142_ABOUT.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <img src="bscs25142_image1.webp" alt="Full-width Kawasaki hero image" class="hero-image">
+        <div class="hero-text">
+            <h1>ITU MOTORS</h1>
+        </div>
+    </section>
+
+    <section class="products-cta">
+        <div class="cta-card">
+            
+            <div class="cta-overlay">
+                <h2>Explore Our Products</h2>
+                <a href="bscs25142_PRODUCTS.html" class="cta-button">View All Bikes</a>
+            </div>
+        </div>
+    </section>
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Simple Chatbot</h3>
+        </div>
+        <div class="chat-log" id="chat-log">
+            <p class="bot-message">Bot: Hello! I'm a simple chatbot. How can I help you?</p>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-details">
+                <h3>Contact Us</h3>
+                <p>Cell: +92 300 1234567</p>
+                <p>Email: info@itumotors.com</p>
+                <p>Location: Arfa Tower, Lahore, Pakistan</p>
+                <p id="date"></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+document.getElementById("date").innerText = new Date().getFullYear();
+function func1(){
+alert("Welcome to ITU Motors.");
+}
+func1();
+</script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSCS25142 - Contact</title>
+    <link rel="stylesheet" href="bscs25142_css.css">
+    <script src="bscs25142_script.js    "></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="bscs25142_HOME.html">KAWASAKI MOTORS</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="bscs25142_HOME.html">HOME</a></li>
+                <li><a href="bscs25142_PRODUCTS.html">PRODUCTS</a></li>
+                <li><a href="bscs25142_ABOUT.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <div class="contact-box">
+            <h1>Contact</h1>
+                <form onsubmit="validateForm(event)">
+                    <p>Email:</p> 
+                    <input type="text" id="myText">     
+                    <p>Contact Number:</p> 
+                    <input type="text" id="myText2"><br><br>
+                    <button type="submit">GO</button>   
+                </form>        
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-details">
+                <h3>Contact Us</h3>
+                <p>Cell: +92 300-1234567</p>
+                <p>Email: info@itumotors.com</p>
+                <p>Location: Arfa Tower, Lahore, Pakistan</p>
+                <p id="date"></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+document.getElementById("date").innerText = new Date().getFullYear();
+    function validateForm() {
+    let check = document.getElementById("myText").textContent;
+    let check2 = document.getElementById("myText2").textContent;
+    if(check.includes = "@" && "."){
+        if(check2.includes = ""){
+            alert("Thank You for reaching us");
+        }
+    }
+}
+</script>
+</html>

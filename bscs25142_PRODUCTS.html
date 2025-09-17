@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSCS25142 - Products</title>
+    <link rel="stylesheet" href="bscs25142_css.css">
+    <script src="bscs25142_script.js"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="bscs25142_HOME.html">KAWASAKI MOTORS</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="bscs25142_HOME.html">HOME</a></li>
+                <li><a href="bscs25142_PRODUCTS.html">PRODUCTS</a></li>
+                <li><a href="bscs25142_ABOUT.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="products-container">
+        <h1>Our Motorcycles</h1>
+        
+        <div class="product-box">
+            <img src="bscs25142_image2.jpeg" alt="Kawasaki Ninja 400" class="product-image">
+            <div class="product-details">
+                <h2>Kawasaki Ninja 400</h2>
+                <p class="product-price">Price: PKR 1,958,000</p>
+                <p hidden id="stock1">In Stock</p>
+                <button onclick="stock('stock1')">Check Stock</button>
+                <p class="product-description">The Ninja 400 is a lightweight sportbike, offering a smooth and responsive 399cc engine. Its lightweight trellis frame and powerful brakes make it a thrilling and accessible ride for all skill levels.</p>
+            </div>
+        </div>
+        
+        <div class="product-box">
+            <img src="bscs25142_image6.jpeg" alt="Kawasaki Ninja ZX-6R" class="product-image">
+            <div class="product-details">
+                <h2>Kawasaki Ninja ZX-6R</h2>
+                <p class="product-price">Price: PKR 2,294,000</p>
+                <p hidden id="stock2">In Stock</p>
+                <button onclick="stock('stock2')">Check Stock</button>
+                <p class="product-description">The ZX-6R is a high-performance 636cc supersport motorcycle built for both the track and the street. It features advanced technology, including a quick shifter, traction control, and riding modes.</p>
+            </div>
+        </div>
+
+        <div class="product-box">
+            <img src="bscs25142_image5.jpeg" alt="Kawasaki Z900" class="product-image">
+            <div class="product-details">
+                <h2>Kawasaki Z900</h2>
+                <p class="product-price">Price: PKR 1,450,000</p>
+                <p hidden id="stock3">Out Of Stock</p>
+                <button onclick="stock('stock3')">Check Stock</button>
+                <p class="product-description">A naked bike with aggressive "Sugomi" styling, the Z900 features a potent 948cc inline-four engine and advanced electronics. It delivers a perfect balance of power and handling for an exhilarating ride.</p>
+            </div>
+        </div>
+
+        <div class="product-box">
+            <img src="bscs25142_image3.jpeg" alt="Kawasaki Versys 650" class="product-image">
+            <div class="product-details">
+                <h2>Kawasaki Versys 650</h2>
+                <p class="product-price">Price: PKR 3,400,000</p>
+                <p hidden id="stock4">In Stock</p>
+                <button onclick="stock('stock4')">Check Stock</button>
+                <p class="product-description">The Versys 650 is a versatile adventure tourer, powered by a 649cc parallel-twin engine. Its comfortable ergonomics, long-travel suspension, and agile handling make it ideal for varied road conditions.</p>
+            </div>
+        </div>
+        
+        <div class="product-box">
+            <img src="bscs25142_image4.jpeg" alt="Kawasaki Vulcan S" class="product-image">
+            <div class="product-details">
+                <h2>Kawasaki Vulcan S</h2>
+                <p class="product-price">Price: Approx. $7,749</p>
+                <p hidden id="stock5">Out Of Stock</p>
+                <button onclick="stock('stock5')">Check Stock</button>
+                <p class="product-description">A unique cruiser that combines sporty looks with comfortable ergonomics and a powerful 649cc engine derived from the Ninja 650. It features an adjustable riding position to fit a wide range of riders.</p>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-details">
+                <h3>Contact Us</h3>
+                <p>Cell: +92 3XX-XXXXXXX</p>
+                <p>Email: info@greendragonmotors.com</p>
+                <p>Location: 123 Street, City, Country</p>
+                <p id="date"></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+document.getElementById("date").innerText = new Date().getFullYear();
+</script>
+</html>
